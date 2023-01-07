@@ -10,47 +10,26 @@
 
 <body>
     <script>
-
+        
         let action;
         let a;
         let b;
         let result;
 
-        while (true) {
-            action = prompt("Select action. Cases: -,+,*,/,add,sub,mult,div").toLowerCase();
-            if (!action || /^(\-|\+|\*|\/|add|sub|mult|div)$/.test(action) && (action != "")) {
-                console.log("типа все ок, валидация прошла");
-                break;
-            } else {
-                alert("Please enter a valid action");
-            }
-        }
+        do {
+            alert("enter valid action");
+            action = prompt("Select action. Cases: -,+,*,/,add,sub,mult,div");
+        } while (action == "" && action != "+" && action != "-" && action != "*" && action != "/" && action != "add" && action != "sub" && action != "mult" && action != "div");
 
-        while (true) {
-            a = prompt("input digit");
-            if (!isNaN(a) && (a != "")) {
-                console.log("типа все ок, валидация прошла");
-                break;
-            } else {
-                alert("Please enter a valid digit");
-            }
-        }
+        do {
+            alert("enter valid digit 1");
+            a = prompt("Enter digit 1");
+        } while (a == "" || isNaN(a));
 
-        while (true) {
-            b = prompt("input digit 2");
-            if (!isNaN(b)) {
-                console.log("типа все ок, валидация прошла");
-                break;
-            } else {
-                alert("Please enter a valid digit");
-            }
-        }
-
-        console.log(typeof (action));
-        console.log(action);
-        console.log(action == '+');
-        console.log(action == '');
-        console.log(action == "");
+        do {
+            alert("enter valid digit 2");
+            b = prompt("Enter digit 2");
+        } while (b == "" || isNaN(b));
 
         switch (action) {
             case '+': case 'add':
@@ -73,8 +52,6 @@
             default:
                 console.log(`Что-то пошло не так`);
         }
-
-
 
 
 
