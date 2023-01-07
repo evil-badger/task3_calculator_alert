@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Предыдущее решение
+        // let action;
+        // let a;
+        // let b;
+        // let result;
+
+        // while (true) {
+        //     action = prompt("Select action. Cases: -,+,*,/,add,sub,mult,div").toLowerCase();
+        //     if (!action || /^(\-|\+|\*|\/|add|sub|mult|div)$/.test(action) && (action != "")) {
+        //         console.log("типа все ок, валидация прошла");
+        //         break;
+        //     } else {
+        //         alert("Please enter a valid action");
+        //     }
+        // }
+
+        // while (true) {
+        //     a = prompt("input digit");
+        //     if (!isNaN(a) && (a != "")) {
+        //         console.log("типа все ок, валидация прошла");
+        //         break;
+        //     } else {
+        //         alert("Please enter a valid digit");
+        //     }
+        // }
+
+        // while (true) {
+        //     b = prompt("input digit 2");
+        //     if (!isNaN(b)) {
+        //         console.log("типа все ок, валидация прошла");
+        //         break;
+        //     } else {
+        //         alert("Please enter a valid digit");
+        //     }
+        // }
+
+        // console.log(typeof (action));
+        // console.log(action);
+        // console.log(action == '+');
+        // console.log(action == '');
+        // console.log(action == "");
+
+        // switch (action) {
+        //     case '+': case 'add':
+        //         result = parseInt(a) + parseInt(b);
+        //         alert(`Результат:${a}+${b}=${result}`);
+        //         break;
+        //     case '-': case 'sub':
+        //         result = parseInt(a) - parseInt(b);
+        //         alert(`Результат:${a}-${b}=${result}`);
+        //         break;
+        //     case '*': case 'mult':
+        //         result = parseInt(a) * parseInt(b);
+        //         alert(`Результат:${a}*${b}=${result}`);
+        //         break;
+        //     case '/': case 'div':
+        //         result = parseInt(a) / parseInt(b);
+        //         alert(`Результат:${a}/${b}=${result}`);
+        //         break;
+
+        //     default:
+        //         console.log(`Что-то пошло не так`);
+        // }
+
+        do {
+            alert("enter valid value");
+            action = prompt("Select action. Cases: -,+,*,/,add,sub,mult,div");
+        } while (action!="+"&&action!="-"&&action!="*"&&action!="/"&&action!="add"&&action!="sub"&&action!="mult"&&action!="div");
+
+    </script>
+</body>
+
+</html>
